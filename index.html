@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kolors</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="bower_components/sweep/bin/sweep.js"></script>
+
+</head>
+<body class="container">
+    <h1 class="item title">kolors</h1>
+    
+    
+    <script type="text/javascript">
+
+		;(function( ){
+			"use strict";
+            var body = document.body;
+            
+            function loop () {
+                console.log('looping')
+                sweep(body, ['background-color', 'border-color'], 'hsl(0, 1, 0.5)', 'hsl(359, 1, 0.5)', {
+                  callback: loop,
+                  direction: 1,
+                  duration: 10000,
+                  space: 'HUSL'
+                });
+              }
+
+			loop();
+
+		})( );
+
+	</script>
+</body>
+</html>

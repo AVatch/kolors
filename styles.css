@@ -1,0 +1,25 @@
+
+.title {
+    color: white;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+html {
+    height: 100vh;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    
+}
